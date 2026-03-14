@@ -1,7 +1,6 @@
 // src/data/games.js
 import game1Thumb from '/src/assets/images/games/game1.png';
 import game2Thumb from '/src/assets/images/games/game2.png';
-import game0Thumb from '/src/assets/images/games/game0.png';
 
 //gallery
 import game1image1 from '/src/assets/images/games/gallery/game1/1.jpg';
@@ -39,7 +38,7 @@ export const gamesData = [
     privacyHTML:
     `
     <div>
-  <img src="/src/assets/images/games/game1b.png" alt="Toystore Logo" class="logo">
+  <img src="/logogame1.png" alt="Toystore Logo" class="logo">
   <h1>Toystore</h1>
   <h2>Privacy Policy</h2>
   <hr>
@@ -116,7 +115,7 @@ export const gamesData = [
 	<hr>
     </div>`,
     deletionHTML: `
-      <img src="/src/assets/images/games/game1b.png" alt="Toystore Logo" class="logo">
+      <img src="/logogame1.png" alt="Toystore Logo" class="logo">
       <h1>Toystore</h1>
       <h2>Request Data Deletion</h2>
       <hr>

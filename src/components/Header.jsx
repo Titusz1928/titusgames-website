@@ -1,5 +1,6 @@
 import {NavLink} from 'react-router';
 import './Header.css';
+import controllerIcon from '../assets/images/icons/controller.png';
 
 export function Header() {
     return (
@@ -28,7 +29,7 @@ export function Header() {
                     </NavLink>
 
                     <NavLink className="projects-link header-link" to="/games">
-                        <img className="projects-icon" src="/src/assets/images/icons/controller.png" />
+                        <img className="projects-icon" src={controllerIcon} alt="Controller" />
                         <div className="projects-text">Games</div>
                     </NavLink>
                 </div>
