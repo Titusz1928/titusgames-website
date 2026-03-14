@@ -119,13 +119,14 @@ export const gamesData = [
       <h1>Toystore</h1>
       <h2>Request Data Deletion</h2>
       <hr>
-      <p>To request deletion of your data collected by Toystore (Titus Games)...</p>
+      <p>TTo request deletion of your data collected by Toystore (Titus Games), please follow these steps. This process only affects your own anonymous user data stored in Firebase Firestore (username, selected region, highscore, timestamp, and anonymous ID). Global highscores or data from other users will not be affected.</p>
       <ol>
         <li>Send a request via email: <strong>titusgames.studios@gmail.com</strong><strong>toystore.game.contact@gmail.com</strong></li>
 		<br>
         <li>Provide your username.</li>
         <li>Include a screenshot to verify ownership.</li>
       </ol>
+	  <p>We aim to process deletion requests promptly and will confirm once your data has been removed.</p>
     `
   },
   { 
