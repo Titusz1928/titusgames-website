@@ -1,0 +1,19 @@
+.privacy-wrapper {
+  max-width: 900px;
+  margin: 6rem auto;
+  padding: 2rem;
+  background: #1a1a1a;
+  color: #ddd;
+}
+
+/* Style the elements inside the injected HTML */
+.privacy-content h1 { color: #fff; text-align: center; }
+.privacy-content strong { color: #646cff; display: block; margin-top: 1rem; }
+.privacy-content ul { padding-left: 20px; }
+.privacy-content a { color: #646cff; }
+
+.privacy-content .logo {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}

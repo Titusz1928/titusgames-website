@@ -1,0 +1,123 @@
+.game-detail-page {
+  max-width: 1200px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+  color: rgb(0, 0, 0);
+}
+
+.tags-container {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0 3rem 0;
+}
+
+.tag {
+  background: #333;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #646cff;
+}
+
+.game-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns on desktop */
+  gap: 4rem;
+}
+
+.links-section a {
+  display: block;
+  color: #646cff;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 or 2xN grid */
+  gap: 1rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.gallery-item img:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .game-info-grid {
+    grid-template-columns: 1fr; /* Stack on mobile */
+  }
+}
+
+
+/* Modal Overlay: Dims the background */
+.modal-overlay {
+  position: fixed;
+  /* Use inset: 0 as a shorthand for top/left/bottom/right 0 */
+  inset: 0; 
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Boost this to ensure it clears everything */
+  cursor: zoom-out;
+  /* Remove or reduce padding to prevent pushing the image offset */
+  padding: 10px; 
+}
+
+/* Modal Content: Holds the image */
+.modal-content {
+  /* Remove position: relative if it's causing weird behavior */
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Ensure this container doesn't overflow the viewport */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.modal-content img {
+  /* object-fit: contain ensures the image keeps its ratio within the bounds */
+  object-fit: contain;
+  max-width: 95vw;
+  max-height: 85vh; /* Leave room for buttons/info */
+  border-radius: 4px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  cursor: default;
+  animation: zoomIn 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Close Button - Move it to fixed so it doesn't move with the image */
+.modal-close {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10000;
+  transition: background 0.2s;
+}
+
+.modal-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
