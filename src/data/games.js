@@ -32,7 +32,7 @@ export const gamesData = [
     buttonLink: '/game/toystore',
     privacyLink: '/privacy/toystore',
     storeLinks: {
-      playstore: 'https://www.google.com/'
+      playstore: 'https://play.google.com/store/apps/details?id=com.BorosTitusz.com.unity.toystore'
     },
     gallery: [game1image1, game1image2, game1image3,game1image4],
     privacyHTML:
